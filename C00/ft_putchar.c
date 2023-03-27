@@ -3,15 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ddyankov <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ddyankov <ddyankov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/03 12:36:11 by ddyankov          #+#    #+#             */
-/*   Updated: 2022/09/04 12:07:14 by ddyankov         ###   ########.fr       */
+/*   Updated: 2023/03/27 22:13:19 by ddyankov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <unistd.h>
 
 void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
+
+/*int	main(void)
+{
+	ft_putchar('C');
+	ft_putchar('\n');
+	return (0);
+}*/
