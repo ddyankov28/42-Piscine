@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_comb.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ddyankov <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ddyankov <ddyankov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/05 18:57:49 by ddyankov          #+#    #+#             */
-/*   Updated: 2022/09/08 10:58:37 by ddyankov         ###   ########.fr       */
+/*   Updated: 2023/03/27 22:32:46 by ddyankov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,3 +39,9 @@ void	ft_print_comb(void)
 		a++;
 	}
 }
+
+/*int	main(void)
+{
+	ft_print_comb();
+	return (0);
+}*/

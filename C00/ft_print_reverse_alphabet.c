@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ddyankov <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ddyankov <ddyankov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/04 13:40:48 by ddyankov          #+#    #+#             */
-/*   Updated: 2022/09/08 10:49:59 by ddyankov         ###   ########.fr       */
+/*   Updated: 2023/03/27 22:23:58 by ddyankov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,18 @@ void	ft_putchar(char c)
 
 void	ft_print_reverse_alphabet(void)
 {
-	char	buchstabe;
+	char	c;
 
-	buchstabe = 'z';
-	while (buchstabe >= 'a')
+	c = 'z';
+	while (c >= 'a')
 	{
-		ft_putchar(buchstabe);
-		buchstabe--;
+		ft_putchar(c);
+		c--;
 	}
 }
+
+/*int	main(void)
+{
+	ft_print_reverse_alphabet();
+	return (0);
+}*/

@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_fibonacci.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ddyankov <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ddyankov <ddyankov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/20 13:19:33 by ddyankov          #+#    #+#             */
-/*   Updated: 2022/09/20 13:28:58 by ddyankov         ###   ########.fr       */
+/*   Updated: 2023/03/27 23:24:17 by ddyankov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 int	ft_fibonacci(int index)
 {
 	if (index < 0)

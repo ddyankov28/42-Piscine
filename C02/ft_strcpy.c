@@ -3,23 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ddyankov <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ddyankov <ddyankov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/10 16:22:20 by ddyankov          #+#    #+#             */
-/*   Updated: 2022/09/13 16:04:50 by ddyankov         ###   ########.fr       */
+/*   Updated: 2023/03/27 23:11:03 by ddyankov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strcpy(char *dest, char *src)
 {
-	int	a;
+	int	i;
 
-	a = 0;
-	while (src[a])
+	i = 0;
+	while (src[i])
 	{
-		dest[a] = src[a];
-		a++;
+		dest[i] = src[i];
+		i++;
 	}
-	dest[a] = '\0';
+	dest[i] = '\0';
 	return (dest);
 }

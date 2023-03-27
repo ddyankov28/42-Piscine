@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_params.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ddyankov <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ddyankov <ddyankov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/21 13:34:36 by ddyankov          #+#    #+#             */
-/*   Updated: 2022/09/22 11:57:47 by ddyankov         ###   ########.fr       */
+/*   Updated: 2023/03/27 23:31:16 by ddyankov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <unistd.h>
 
 void	ft_putchar(char c)
@@ -16,22 +17,19 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-int	main(int argc, char **argv)
+int	main(int ac, char **av)
 {	
-	int	a;
-	int	b;
+	int	i;
+	int	j;
 
-	a = 1;
-	while (a < argc)
+	i = 1;
+	while (i < ac)
 	{	
-		b = 0;
-		while (argv[a][b] != '\0')
-		{
-			ft_putchar(argv[a][b]);
-			b++;
-		}
+		j = 0;
+		while (av[i][j])
+			ft_putchar(av[i][j++]);
 		write(1, "\n", 1);
-		a++;
+		i++;
 	}
 	return (0);
 }

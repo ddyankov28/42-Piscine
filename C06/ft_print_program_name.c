@@ -3,25 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_program_name.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ddyankov <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ddyankov <ddyankov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/21 12:41:42 by ddyankov          #+#    #+#             */
-/*   Updated: 2022/09/22 15:15:36 by ddyankov         ###   ########.fr       */
+/*   Updated: 2023/03/27 23:36:28 by ddyankov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <unistd.h>
 
-int	main(int argc, char **argv)
-{	
-	int	a;
+int	main(int ac, char **av)
+{
+	int	i;
 
-	a = 0;
-	argc = 0;
-	while (argv[argc][a] != '\0')
-	{	
-		write(1, &argv[argc][a], 1);
-		a++;
-	}
+	i = 0;
+	(void)ac;
+	while (av[0][i])
+		write(1, &av[0][i++], 1);
 	write(1, "\n", 1);
 	return (0);
 }

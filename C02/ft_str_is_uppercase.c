@@ -3,28 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_str_is_uppercase.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ddyankov <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ddyankov <ddyankov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/12 11:26:40 by ddyankov          #+#    #+#             */
-/*   Updated: 2022/09/12 11:30:39 by ddyankov         ###   ########.fr       */
+/*   Updated: 2023/03/27 23:08:37 by ddyankov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_str_is_uppercase(char *str)
 {
-	int	a;
+	int	i;
 
-	a = 0;
-	while (str[a] >= 'A' && str[a] <= 'Z')
-	{
-		a++;
-	}
-	if (str[a] == '\0')
-	{
+	i = 0;
+	while (str[i] >= 'A' && str[i] <= 'Z')
+		i++;
+	if (str[i] == '\0')
 		return (1);
-	}
 	else
-	{
 		return (0);
-	}
 }

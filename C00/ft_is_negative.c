@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_is_negative.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ddyankov <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ddyankov <ddyankov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/05 10:50:00 by ddyankov          #+#    #+#             */
-/*   Updated: 2022/09/06 18:42:37 by ddyankov         ###   ########.fr       */
+/*   Updated: 2023/03/27 22:28:32 by ddyankov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,4 +27,15 @@ void	ft_is_negative(int n)
 	{
 		ft_putchar('P');
 	}
-}	
+}
+
+/*int	main(void)
+{
+	ft_is_negative(-5);
+	ft_putchar('\n');
+	ft_is_negative(0);
+	ft_putchar('\n');
+	ft_is_negative(42);
+	ft_putchar('\n');
+	return (0);
+}*/

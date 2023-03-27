@@ -3,23 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ddyankov <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ddyankov <ddyankov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/15 13:07:46 by ddyankov          #+#    #+#             */
-/*   Updated: 2022/09/17 11:15:00 by ddyankov         ###   ########.fr       */
+/*   Updated: 2023/03/27 23:18:24 by ddyankov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
-	unsigned int	a;
+	unsigned int	i;
 
-	a = 0;
-	while (s1[a] == s2[a] && s1[a] != '\0' && s2[a] != '\0' && a < n)
-	{
-		a++;
-	}
-	if (a == n)
+	i = 0;
+	while (s1[i] == s2[i] && s1[i] && s2[i] && i < n)
+		i++;
+	if (i == n)
 		return (0);
-	return (s1[a] - s2[a]);
+	return (s1[i] - s2[i]);
 }

@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ddyankov <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ddyankov <ddyankov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/22 15:38:51 by ddyankov          #+#    #+#             */
-/*   Updated: 2022/09/22 15:39:42 by ddyankov         ###   ########.fr       */
+/*   Updated: 2023/03/27 22:22:18 by ddyankov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <unistd.h>
 
 void	ft_putchar(char c)
@@ -37,3 +38,14 @@ void	ft_putnbr(int nb)
 		ft_putnbr(nb % 10);
 	}
 }
+
+/*int	main(void)
+{
+	ft_putnbr(-42);
+	ft_putchar('\n');
+	ft_putnbr(7);
+	ft_putchar('\n');
+	ft_putnbr(42);
+	ft_putchar('\n');
+	return (0);
+}*/

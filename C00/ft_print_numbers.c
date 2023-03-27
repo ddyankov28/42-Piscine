@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_numbers.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ddyankov <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ddyankov <ddyankov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/04 20:28:08 by ddyankov          #+#    #+#             */
-/*   Updated: 2022/09/08 10:57:04 by ddyankov         ###   ########.fr       */
+/*   Updated: 2023/03/27 22:36:41 by ddyankov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,18 @@ void	ft_putchar(char c)
 
 void	ft_print_numbers(void)
 {
-	char	number;
+	char	c;
 
-	number = '0';
-	while (number <= '9')
+	c = '0';
+	while (c <= '9')
 	{
-		ft_putchar(number);
-		number++;
+		ft_putchar(c);
+		c++;
 	}
 }
+
+/*int	main(void)
+{
+	ft_print_numbers();
+	return (0);
+}*/

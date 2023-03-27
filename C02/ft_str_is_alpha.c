@@ -3,28 +3,31 @@
 /*                                                        :::      ::::::::   */
 /*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ddyankov <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ddyankov <ddyankov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/11 16:37:46 by ddyankov          #+#    #+#             */
-/*   Updated: 2022/09/12 10:56:12 by ddyankov         ###   ########.fr       */
+/*   Updated: 2023/03/27 23:02:34 by ddyankov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
+
 int	ft_str_is_alpha(char *str)
 {
-	int	a;
+	int	i;
 
-	a = 0;
-	while ((str[a] >= 'a' || str[a] >= 'A') && (str[a] <= 'z' || str[a] <= 'Z'))
-	{
-		a++;
-	}
-	if (str[a] == '\0')
-	{
+	i = 0;
+	while ((str[i] >= 'a' || str[i] >= 'A') && (str[i] <= 'z' || str[i] <= 'Z'))
+		i++;
+	if (str[i] == '\0')
 		return (1);
-	}
 	else
-	{
 		return (0);
-	}
 }
+
+/*int	main(void)
+{
+	printf("%d\n", ft_str_is_alpha("onlyalpha"));
+	printf("%d\n", ft_str_is_alpha("this is not"));
+	return (0);	
+}*/

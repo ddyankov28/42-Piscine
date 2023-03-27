@@ -3,27 +3,27 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ddyankov <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ddyankov <ddyankov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/11 15:35:43 by ddyankov          #+#    #+#             */
-/*   Updated: 2022/09/12 20:39:55 by ddyankov         ###   ########.fr       */
+/*   Updated: 2023/03/27 23:12:37 by ddyankov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int	a;
+	unsigned int	i;
 
-	a = 0;
-	while (a < n && src[a] != '\0')
+	i = 0;
+	while (i < n && src[i])
 	{
-		dest[a] = src[a];
-		a++;
+		dest[i] = src[i];
+		i++;
 	}
-	while (a < n)
+	while (i < n)
 	{
-		dest[a] = '\0';
-		a++;
+		dest[i] = '\0';
+		i++;
 	}
 	return (dest);
 }

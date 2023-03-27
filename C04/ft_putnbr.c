@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ddyankov <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ddyankov <ddyankov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/17 15:06:46 by ddyankov          #+#    #+#             */
-/*   Updated: 2022/09/20 12:34:10 by ddyankov         ###   ########.fr       */
+/*   Updated: 2023/03/27 23:22:47 by ddyankov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
 
 void	ft_putchar(char c)
 {

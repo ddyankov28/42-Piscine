@@ -3,28 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_str_is_printable.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ddyankov <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ddyankov <ddyankov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/12 11:41:04 by ddyankov          #+#    #+#             */
-/*   Updated: 2022/09/12 11:45:36 by ddyankov         ###   ########.fr       */
+/*   Updated: 2023/03/27 23:08:04 by ddyankov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_str_is_printable(char *str)
 {
-	int	a;
+	int	i;
 
-	a = 0;
-	while (str[a] >= 32 && str[a] <= 126)
-	{
-		a++;
-	}
-	if (str[a] == '\0')
-	{
+	i = 0;
+	while (str[i] >= 32 && str[i] <= 126)
+		i++;
+	if (str[i] == '\0')
 		return (1);
-	}
 	else
-	{
 		return (0);
-	}
 }

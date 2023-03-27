@@ -3,25 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlowcase.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ddyankov <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ddyankov <ddyankov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/12 12:36:32 by ddyankov          #+#    #+#             */
-/*   Updated: 2022/09/12 12:38:01 by ddyankov         ###   ########.fr       */
+/*   Updated: 2023/03/27 23:11:49 by ddyankov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strlowcase(char *str)
 {
-	int	a;
+	int	i;
 
-	a = 0;
-	while (str[a])
+	i = 0;
+	while (str[i])
 	{	
-		if (str[a] >= 'A' && str[a] <= 'Z')
-		{	
-			str[a] = str[a] + 32;
-		}
-		a++;
+		if (str[i] >= 'A' && str[i] <= 'Z')
+			str[i] += 32;
+		i++;
 	}
 	return (str);
 }

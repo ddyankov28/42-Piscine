@@ -3,22 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ddyankov <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ddyankov <ddyankov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/16 14:01:26 by ddyankov          #+#    #+#             */
-/*   Updated: 2022/09/19 13:23:57 by ddyankov         ###   ########.fr       */
+/*   Updated: 2023/03/27 23:22:05 by ddyankov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
 
 void	ft_putstr(char *str)
 {
-	int	a;
+	int	i;
 
-	a = 0;
-	while (str[a] != '\0')
-	{
-		write(1, &str[a], 1);
-		a++;
-	}
+	i = 0;
+	while (str[i])
+		write(1, &str[i++], 1);
 }
